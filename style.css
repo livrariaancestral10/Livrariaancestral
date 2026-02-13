@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f2f2; /* Cor de fundo padrão */
+    color: #333;
+}
+
+/* Página Inicial */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.overlay {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.texto-destaque {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1e8449;
+}
+
+.email {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+/* Loja */
+.header-loja {
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-loja .voltar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background: #27ae60;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.header-loja .voltar:hover {
+    background: #1e8449;
+}
+
+.livros {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #27ae60;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
