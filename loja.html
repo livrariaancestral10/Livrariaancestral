@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,3 +33,18 @@
 
 </body>
 </html>
+<section class="livros" id="livros"></section>
+<script>
+let livros = JSON.parse(localStorage.getItem('livros')) || [];
+const container = document.getElementById('livros');
+livros.forEach(l => {
+    container.innerHTML += `
+    <div class="card">
+        <h3>${l.titulo}</h3>
+        <p>${l.descricao}</p>
+        <span>R$ ${l.preco}</span>
+        <a href="${l.pdf}" download>Baixar PDF</a>
+    </div>
+    `;
+});
+</script>
